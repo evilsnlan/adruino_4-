@@ -1,6 +1,6 @@
 # adruino_4-
 
-4位共阳数码管，可以开机动画，但是字符有限，可以正常写数字，字母切换有点问题，没加运算，没有加计时
+// 4位共阳数码管，可以开机动画，但是字符有限，可以正常写数字，字母切换有点问题，没加运算，没有加计时
 
 #include "SevSeg.h"
 
@@ -21,20 +21,6 @@ String displayChars = "";
 
 const String VALID_LETTERS = "AbCdEFGHIJLnOoPqrStUuy";
 
-
-// =========================
-// 滚动显示
-// XXXX
-// XXX0
-// XX0P
-// X0PE
-// 0PEn
-// PEn!
-// En!X
-// n!XX
-// !XXX
-// XXXX
-// =========================
 void scrollText(String text, int delayMs) {
 
   // 前后补空格
